@@ -1,0 +1,10 @@
+#headshot {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 15px;
+    float: left;
+    height: 150px;
+    width: 190px;
+    border: 1px solid #CCCCCC;
+}
+
