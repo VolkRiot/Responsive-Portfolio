@@ -1,10 +1,5 @@
-html{
-    min-height: 100%;
-}
-
 body{
     background: url("../images/escheresque.png");
-    position: relative;
     min-height: 100%;
 }
 
@@ -13,6 +8,13 @@ header{
     border-bottom: 2px #cccccc solid;
     height: 80px;
     background-color: white;
+}
+
+.wrapper{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+
 }
 
 #nameContainer{
@@ -76,7 +78,8 @@ a:hover{
 }
 
 .mainDiv{
-    position: absolute;
+    float: left;
+    position: relative;
     margin-top: 40px;
     padding: 0 25px 0 25px;
     left: 10%;
@@ -175,10 +178,11 @@ button:hover{
 }
 
 #connect{
+    float: left;
     position: absolute;
     margin-top: 40px;
     width: 230px;
-    right: 19%;
+    right: 16%;
     border: 2px solid #CCCCCC;
     background-color: white;
 }
@@ -218,9 +222,15 @@ a{
     border-bottom-color: #4aaaa5;
 }
 
+.push{
+    clear: both;
+    position: relative;
+    height: 100px;
+}
+
 footer{
-    position: absolute;
-    top: 1250%;
+    position: relative;
+    clear: both;
     width: 100%;
     background-color: #666666;
     height: 80px;
@@ -234,4 +244,133 @@ h3:only-child{
     margin-top: 30px;
 }
 
+@media screen and (max-width: 1115px){
 
+    #connect{
+        right: 4%;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+
+    .mainDiv{
+        float: left;
+        width: 31%;
+    }
+
+    #connect{
+        position: relative;
+        right: -16%;
+        float: left;
+        border: 2px solid #CCCCCC;
+    }
+
+    #navigationMenu{
+        left: 53%;
+    }
+    
+    .writtenBio{
+        clear: both;
+    }
+
+    #headshot{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .mainDiv{
+        width: 78%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    #headshot{
+        width: 40%;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .writtenBio{
+        clear: none;
+    }
+    
+    #connect{
+        position: relative;
+        top: 95%;
+        width: 85%;
+        left: 10%;
+        float: left;
+        clear: both;
+        border: 2px solid #CCCCCC;
+    }
+
+    #navigationMenu{
+        left: 46%;
+    }
+
+    .imgContainer{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+    .mainDiv{
+        left: 5%;
+    }
+
+    #connect{
+        position: relative;
+        top: 97%;
+        width: 87%;
+        left: 5%;
+        float: left;
+        clear: both;
+        border: 2px solid #CCCCCC;
+        text-align: center;
+    }
+
+    header{
+        height: 160px;
+    }
+
+    #nameContainer{
+        left:0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #navigationMenu{
+        position: absolute;
+        list-style-type: none;
+        padding-top: 30px;
+        margin: 0 10px 0 10px;
+        top: 80px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    #headshot{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .writtenBio{
+        clear: both;
+    }
+
+    .imgContainer{
+        position: relative;
+        clear: both;
+        left: 10%;
+    }
+
+}
