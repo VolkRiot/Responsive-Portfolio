@@ -135,6 +135,7 @@ form{
 .textBox{
     color: #AEA9AE;
     width: 99%;
+    border: 1px #AEA9AE solid;
     margin: 5px 0 10px 0;
     padding: 3px 0 3px 4px;
 }
@@ -327,7 +328,7 @@ h3:only-child{
 @media screen and (max-width: 640px){
 
     .mainDiv{
-        left: 5%;
+        left: 2%;
         width: 80%;
     }
 
@@ -380,7 +381,7 @@ h3:only-child{
     .imgContainer{
         position: relative;
         clear: both;
-        left: 10%;
+        left: -5%;
     }
 
 }
